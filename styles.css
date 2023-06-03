@@ -10,21 +10,23 @@ body {
   min-height: 100vh;
 }
 
-.root {
+.main-grid-box {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: max(20vh, 320px) 1fr 30vh;
+  grid-template-rows: 320px 1fr 10px 170px;
   grid-template-columns: 1fr 620px 1fr;
   grid-template-areas:
     "header header header"
     ". content ."
-    ". footer .";
+    ". break ."
+    "footer footer footer";
+  justify-items: center;
+  align-items: center;
 }
 
 .header {
   grid-area: header;
-  font-family: "Cormorant Infant", serif;
   text-align: center;
   color: black;
   display: flex;
@@ -33,12 +35,14 @@ body {
   align-items: center;
 }
 
-.header h1 {
+.title {
+  font-family: "Cormorant Infant", serif;
   font-size: 144px;
   letter-spacing: 45px;
 }
 
 .sub-title {
+  font-family: "Cormorant", serif;
   font-weight: 700;
   font-size: 36px;
 }
@@ -124,18 +128,34 @@ body {
   width: 100%;
 }
 
-.tribute-text p {
-  margin: 30px 0;
+.tribute-paragraph {
+  line-height: 1.4;
 }
 
-li {
+.tribute-paragraph:not(:first-of-type) {
+  margin-top: 30px;
+}
+
+.timeline-header {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.timeline-item {
   list-style: none;
+  margin-top: 10px;
+}
+
+.footer-break {
+  grid-area: break;
+  border-top: 1px solid black;
+  width: 300px;
 }
 
 .footer {
   text-align: center;
   grid-area: footer;
-  height: min-content;
+  height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,11 +163,11 @@ li {
 }
 
 .footer-text {
-  padding: 75px 0;
-  border-top: 1px solid black;
+  padding: 60px 0;
   font-weight: 400;
   font-size: 22px;
   margin: 0;
+  width: 620px;
 }
 
 .tribute-link,
@@ -162,14 +182,116 @@ li {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
+  :root * {
+    max-width: 100vw;
+  }
+
   body {
-    grid-template-rows: 30vh 1fr 15vh;
     font-size: 14px;
   }
+
+  .title {
+    font-size: 50px;
+    letter-spacing: 15px;
+  }
+
+  .sub-title {
+    font-size: 24px;
+  }
+
+  .main-grid-box {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 180px 1fr 10px 100px;
+    grid-template-areas:
+      "header"
+      "content"
+      "break"
+      "footer";
+    justify-items: center;
+    align-items: center;
+  }
+
+  .main {
+    font-size: 16px;
+    padding: 0px 20px 30px 20px;
+  }
+
+  .author-box {
+    height: 60px;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    margin-bottom: 40px;
+  }
+
+  .author-picture {
+    border-radius: 50%;
+    width: 60px;
+  }
+
+  .author-name {
+    font-size: 18px;
+  }
+
+  .author-bio {
+    font-size: 14px;
+  }
+
+  .portrait-box {
+    margin: 30px auto;
+  }
+
+  .portrait-caption {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .tribute-paragraph:not(:first-of-type) {
+    margin-top: 20px;
+  }
+
+  .timeline-header {
+    margin: 15px 0;
+  }
+
+  .timeline-item {
+    margin-top: 5px;
+  }
+
+  .footer-break {
+    width: 250px;
+  }
+
+  .footer {
+    height: 100px;
+  }
+
+  .footer-text {
+    padding: 20px;
+    font-weight: 400;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .tribute-link,
+  .tribute-link:visited,
+  .tribute-link:active {
+    color: #868686;
+    text-decoration: none;
+  }
+
+  .tribute-link:hover {
+    color: #404040;
+    text-decoration: none;
+  }
+
   .footer-text {
     font-size: 16px;
   }
+
   .container {
     width: 90%;
     padding: 10px;

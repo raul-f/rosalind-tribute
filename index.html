@@ -7,15 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Source+Serif+Pro:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant&family=Cormorant+Infant:wght@400;700&family=Source+Serif+Pro:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="root">
+    <div class="main-grid-box">
       <header class="header">
-        <h1>ROSALIND</h1>
+        <h1 class="title">ROSALIND</h1>
         <h2 class="sub-title">The unsung hero of DNA</h2>
       </header>
       <main class="main">
@@ -31,7 +31,7 @@
           </h4>
         </div>
         <section class="tribute-text">
-          <p>
+          <p class="tribute-paragraph">
             Born in 1920 in London, Rosalind Elsie Franklin wanted to be a
             scientist ever since she was a teenager. Despite being discouraged
             by her father (it wasn't an easy career for women at the time), she
@@ -56,7 +56,7 @@
               </figcaption>
             </figure>
           </div>
-          <p>
+          <p class="tribute-paragraph">
             There, she was set to share her workspace with Maurice Wilkins, who
             initially thought she had been hired to be his lab assistant; a bad
             beggining to a relationship that never got better. Nevertheless, she
@@ -78,7 +78,7 @@
             her experiments confirmed Watson and Crick's breakthrough, instead
             of inspiring it.
           </p>
-          <p>
+          <p class="tribute-paragraph">
             At this point, Franklin had already stopped working on DNA, going on
             to study the structure of viruses. In 1956, on a business trip to
             the US, she found a lump in her abdomen which turned out to be
@@ -90,85 +90,86 @@
             Nobel, as her work on the structure of viruses led to a colleague
             winning the prize in 1982.
           </p>
-          <p>
-            The world certainly deserved more than 37 years of Rosalind
-            Franklin.
-          </p>
-          <h2>Here's a timeline of her life:</h2>
-          <ul>
-            <li>
-              <strong>1920:</strong>Born Rosalind Elsie Franklin in London, July
-              25th.
+          <h2 class="timeline-header">Timeline</h2>
+          <ul class="timeline">
+            <li class="timeline-item">
+              <strong>1920:</strong> Born Rosalind Elsie Franklin in London,
+              July 25th.
             </li>
-            <li>
-              <strong>1931-38:</strong>Educated at St. Paul's Girls School,
+            <li class="timeline-item">
+              <strong>1931-38:</strong> Educated at St. Paul's Girls School,
               London.
             </li>
-            <li>
-              <strong>1938:</strong>Entered Newnham College, Cambridge
+            <li class="timeline-item">
+              <strong>1938:</strong> Entered Newnham College, Cambridge
               University.
             </li>
-            <li>
-              <strong>1941:</strong>BA in Physical Chemistry, Cambridge
+            <li class="timeline-item">
+              <strong>1941:</strong> BA in Physical Chemistry, Cambridge
               University.
             </li>
-            <li>
-              <strong>1941-42:</strong>Research on the kinetics of
+            <li class="timeline-item">
+              <strong>1941-42:</strong> Research on the kinetics of
               polymerization reaction at the Physical Chemistry Laboratory,
               Cambridge.
             </li>
-            <li>
-              <strong>1942-46:</strong>Research on colloidal properties of coals
-              and cokes at the British Coal Utilisation Research Association
-              (BCURA) Assistant Research Officer.
+            <li class="timeline-item">
+              <strong>1942-46:</strong> Research on colloidal properties of
+              coals and cokes at the British Coal Utilisation Research
+              Association (BCURA) Assistant Research Officer.
             </li>
-            <li>
-              <strong>1945:</strong>Received PhD in Physical Chemistry from
+            <li class="timeline-item">
+              <strong>1945:</strong> Received PhD in Physical Chemistry from
               Cambridge.
             </li>
-            <li>
-              <strong>1947-51:</strong>Directed a research group in x-ray
+            <li class="timeline-item">
+              <strong>1947-51:</strong> Directed a research group in x-ray
               diffraction studies of carbons at the Laboratoire Central des
               Services Chimiques de l'Etat in Paris.
             </li>
-            <li>
-              <strong>1951-53:</strong>Assembled an x-ray diffraction laboratory
-              at King's College, London, to research the structure of
+            <li class="timeline-item">
+              <strong>1951-53:</strong> Assembled an x-ray diffraction
+              laboratory at King's College, London, to research the structure of
               deoxyribonucleic acid (DNA); discovered that DNA can take two
               forms, "A" and "B"; produced diffraction photo of B form of DNA
               that led to Watson and Crick's theory of its double-helix
               structure.
             </li>
-            <li>
-              <strong>1953:</strong>James Watson and Francis Crick announced
+            <li class="timeline-item">
+              <strong>1953:</strong> James Watson and Francis Crick announced
               their discovery of DNA structure in Nature on April 25, 1953.
               Franklin and Raymond Gosling published their x-ray findings in
               same issue; however, as their article was arranged to come after
               Watson and Crick's, it seemed as it had confirmed their result,
               not inspired it.
             </li>
-            <li>
-              <strong>1953-58:</strong>At invitation of J. D. Bernal, directed
+            <li class="timeline-item">
+              <strong>1953-58:</strong> At invitation of J. D. Bernal, directed
               research on x-ray diffraction studies of plant viruses,
               particularly the tobacco mosaic virus (TMV) at Birkbeck College,
               London. Determined the configuration of TMV and the location of
               its RNA.
             </li>
-            <li>
-              <strong>Summer 1954:</strong>First visit to United States;
+            <li class="timeline-item">
+              <strong>Summer 1954:</strong> First visit to United States;
               presentations at coal research conference, and visits to many
               virus research labs.
             </li>
-            <li>
-              <strong>Summer 1956:</strong>Second visit to United States for
+            <li class="timeline-item">
+              <strong>Summer 1956:</strong> Second visit to United States for
               conference presentations and visits to colleagues in virus
               research labs.
             </li>
-            <li><strong>Fall 1956:</strong>Diagnosed with ovarian cancer.</li>
-            <li><strong>1958:</strong>Died in London on April 16th.</li>
+            <li class="timeline-item">
+              <strong>Fall 1956:</strong> Diagnosed with ovarian cancer.
+            </li>
+            <li class="timeline-item">
+              <strong>1958:</strong> Died in London on April 16th.
+            </li>
           </ul>
         </section>
       </main>
+      <hr class="footer-break" />
       <footer class="footer">
         <h2 class="footer-text">
           If you want to know more about this incredible scientist, check her
